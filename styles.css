@@ -23,7 +23,7 @@ html  {
 
 body {
     margin: 0;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 /* navigation bar */
@@ -421,25 +421,13 @@ hr {
     border-radius: 10px;
 }
 
-.fa-xmark {
-    position: absolute;
-    font-size: 150%;
-    color: var(--white);
-    top: 15%;
-    left: 63%;
-}
-
-.fa-xmark:hover {
-    cursor: pointer;
-}
-
 #desktop-left, #desktop-right {
     display: none;
 }
 
 /* desktop */
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
 
     body {
         max-width: 100%;
@@ -628,50 +616,17 @@ hr {
         right: 30%;
     }
 
-
-}
-
-@media (min-width: 800px) and (max-width: 950px) {
-
-    .main-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center ;
-        text-align: center;
-    }
-
-    .shopping {
-        max-width: 100%;
-        margin:  0 auto;
-    }
-
-    .product {
-        margin-left: 0;
-    }
-
-    .prices {
-        align-items: center;
-    }
-
-    .thumbnails {
-        display: flex;
-        margin: 0.5rem auto;
-        column-gap: 0.5rem;
-    }
-
-    .hidden-pic {
-        width: 22% !important;
-    }
-
-    .overlay-img {
-        min-height: 40%;
-    }
-
-    #desktop-left, #desktop-right {
-        top: 100%;
+    .fa-xmark {
+        position: absolute;
+        font-size: 150%;
+        color: var(--white);
+        top : calc(var(--vh) * 0.15);
+        left: 63%;
+        margin-bottom: 1rem;
     }
     
-    .fa-xmark {
-        top: 25%;
+    .fa-xmark:hover {
+        cursor: pointer;
     }
 }
+

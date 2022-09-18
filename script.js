@@ -166,6 +166,13 @@ window.addEventListener('resize', () => {
     // We execute the same script as before
     let vh = document.documentElement.scrollHeight;
 
+
+    /* remove desktop overlay if width is less than 1000px */
+    let width = document.documentElement.scrollWidth;
+    if(width < 1000) {
+        closingFunc();
+    }
+
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   });
 
@@ -239,7 +246,6 @@ leftDesktop.addEventListener('click', () => {
     }
     desktopOverlay.innerHTML += `<img src = "${images[imgIndex]}" class = "overlay-img">`;
 });
-
 
 
 
